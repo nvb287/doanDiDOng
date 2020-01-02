@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.do_an_lt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/aila_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/aila_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Dangnhap"></activity>
+        <activity android:name=".Dangki"></activity>
+        <activity android:name=".Manhinhchoi"></activity>
+        <activity android:name=".Chude"></activity>
+        <activity android:name=".Tuvantaicho"></activity>
+        <activity android:name=".Luatchoi"></activity>
+        <activity android:name=".Xephang"></activity>
+        <activity android:name=".Goicredit"></activity>
+        <activity android:name="com.example.do_an_lt.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

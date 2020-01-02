@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tuvan_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tổ Tư Vấn Tại Chổ"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nguoithunhat_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Người thứ nhất :"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuvan_textView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="199dp" />
+
+    <TextView
+        android:id="@+id/nguoithuhai_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Người thứ hai :"
+        app:layout_constraintEnd_toEndOf="@+id/nguoithunhat_textView"
+        app:layout_constraintStart_toStartOf="@+id/nguoithunhat_textView"
+        app:layout_constraintTop_toBottomOf="@+id/nguoithunhat_textView" />
+
+    <TextView
+        android:id="@+id/nguoithuba_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Người thứ ba :"
+        app:layout_constraintEnd_toEndOf="@+id/nguoithuhai_textView"
+        app:layout_constraintStart_toStartOf="@+id/nguoithuhai_textView"
+        app:layout_constraintTop_toBottomOf="@+id/nguoithuhai_textView" />
+
+    <TextView
+        android:id="@+id/chona_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Chọn đáp án A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/nguoithunhat_textView" />
+
+    <TextView
+        android:id="@+id/chonb_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chọn đáp án B"
+        app:layout_constraintEnd_toEndOf="@+id/chona_textView"
+        app:layout_constraintStart_toStartOf="@+id/chona_textView"
+        app:layout_constraintTop_toTopOf="@+id/nguoithuhai_textView" />
+
+    <TextView
+        android:id="@+id/chon_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chọn đáp án A"
+        app:layout_constraintEnd_toEndOf="@+id/chonb_textView"
+        app:layout_constraintStart_toStartOf="@+id/chonb_textView"
+        app:layout_constraintTop_toTopOf="@+id/nguoithuba_textView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

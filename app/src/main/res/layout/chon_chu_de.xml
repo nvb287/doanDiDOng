@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/chonChuDe_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Chủ Đề"
+        android:textColor="#21F33D"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chonChuDe_textView"
+        app:srcCompat="@drawable/vanhoa_icon" />
+
+    <Button
+        android:id="@+id/vanHoa_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="Văn Hóa-Nghệ Thuật-Xã Hội"
+        android:background="@drawable/buttonshape"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/khoahoc_icon" />
+
+    <Button
+        android:id="@+id/khoaHoc_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#21F3F3"
+        android:background="@drawable/buttonshape"
+        android:text="Khoa Học"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/vanHoa_button"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/thethao_icon" />
+
+    <Button
+        android:id="@+id/theThao_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Thể Thao"
+        android:textStyle="bold"
+        android:background="@drawable/buttonshape"
+        app:layout_constraintEnd_toEndOf="@+id/khoaHoc_button"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/traidat_icon" />
+
+    <Button
+        android:id="@+id/lichSu_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#3F51B5"
+        android:background="@drawable/buttonshape"
+        android:text="Lịch Sử - Địa Lý"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/theThao_button"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
